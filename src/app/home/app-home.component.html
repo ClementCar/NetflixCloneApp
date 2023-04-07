@@ -1,7 +1,41 @@
 <section>
     <div class="container">
-        <div>
+        <div class="navbar">
+            <img src="http://www.w3.org/2000/svg" alt="">
+            <div class="navbar navbar-dark" id="navbarContent">
+                <ul class="navbar-nav ms-auto d-flex">
+                    <li class="nav-item" ngbDropdown>
+                        <a class="btn btn-outline-light" tabindex="0" ngbDropdownToggle id="navbarDropDown" role="button"><i class="fas fa-globe-europe me-1"></i>Français</a>
+                        <div ngbDropdownMenu aria-labelledby="navbarDropDown" class="dropdown-menu">
+                            <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Français</a>
+                            <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Anglais</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" ngbDropdown>
+                        <button class="btn btn-primary">S'identifier</button>
+                    </li>
+                </ul>
+                <!-- <div ngbDropdown container="body">
+                    <button type="button" class="btn btn-outline-white" ngbDropdownToggle>
+                        <i class="fas fa-globe-europe"></i>
+                        Français
+                    </button>
+                    <div ngbDropdownMenu>
+                        <button><i class="fas fa-globe-europe"></i>Français</button>
+                        <button><i class="fas fa-globe-europe"></i>Anglais</button>
+                    </div>
+                </div>
+                <button class="btn btn-primary">S'identifier</button> -->
+            </div>
+        </div>
+        <div class="text-center">
             <h1>Films, Séries et bien plus en illimité.</h1>
+            <p>Où que vous soyez. Annulez à tout moment.</p>
+            <p>Prêt à regarder netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+            <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Adresse e-mail">
+                <button class="btn btn-primary">Commencer ></button>
+            </div>
         </div>
     </div>
 </section>
