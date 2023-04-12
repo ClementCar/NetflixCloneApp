@@ -1,4 +1,29 @@
+section{
+    padding: 100px 0 100px 0;
+    position: relative;
+}
+
+.custom-br{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(35,35,35);
+}
+
 .search{
     min-height: 43.75rem;
-    background-image: url(../../assets/images/home.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(../../assets/images/home.jpg);
+    // background: rgb(0 0 0 / 40%);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    background: transparent;
 }
