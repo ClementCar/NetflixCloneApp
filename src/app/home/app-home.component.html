@@ -1,4 +1,8 @@
-<section class="search d-flex justify-content-center align-items-center">
+
+<!-- Section Home start -->
+<section class="home d-flex justify-content-center align-items-center">
+
+    <!-- nav Start -->
     <nav class="navbar navbar-expand position-absolute top-0 w-100">
         <div class="container-sm">
             <!-- <img src="http://www.w3.org/2000/svg" alt=""> -->
@@ -19,45 +23,140 @@
             </div>
         </div>
     </nav>
+    <!-- nav end -->
+
     <div class="container-sm h-100">
         <div class="text-center">
             <h1>Films, Séries et bien plus en illimité.</h1>
             <p>Où que vous soyez. Annulez à tout moment.</p>
             <p>Prêt à regarder netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
             <div class="row g-3 d-flex justify-content-center">
-                <!-- <div class="col-6"><input type="text" placeholder="Adresse e-mail"></div>
-                <div class="col-3"><button class="btn btn-primary">Commencer <i class="fas fa-chevron-right"></i></button></div> -->
-                <input class="col-12 col-md-9" type="text" placeholder="Adresse e-mail">
-                <button class="col-6 col-md-3 btn btn-primary fw-bold fs-4">Commencer <i class="fas fa-chevron-right"></i></button>
+                <div class="input col-10 col-md-6 me-4"><input class="w-100" type="text" placeholder="Adresse e-mail"></div>
+                <button class="col-5 col-md-3 col-lg-2 btn btn-primary fw-bold fs-4">Commencer <i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
 </section>
+<!-- section home end -->
+
+
+
+
+<!-- section tv start -->
 <section>
     <div class="container-sm">
-        <div class="row">
-            <div class="col-md-6 text-center">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col text-center">
                 <h2>Regardez Netflix sur votre TV.</h2>
                 <p>Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Applet TV, lecteur Blu-ray et bien plus.</p>
             </div>
-            <div class="col-md-6">
-                <img src="../../assets/images/tv.png" alt="">
+            <div class="col position-relative">
+                <img src="../../assets/images/tv.png" alt="télévision">
+                <div class="video video-tv">
+                    <video autoplay loop src="../../assets/images/video-tv.m4v"></video>
+                </div>
             </div>
         </div>
     </div>
     <div class="custom-br"></div>
 </section>
+<!-- section tv end -->
+
+
+
+
+<!-- section devices start -->
 <section>
     <div class="container-sm">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h2>Regardez Netflix sur votre TV.</h2>
-                <p>Regardez Netflix sur votre Smart TV, PlayStation, Xbox, Chromecast, Applet TV, lecteur Blu-ray et bien plus.</p>
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col text-center">
+                <h2>Où que vous soyez.</h2>
+                <p>Regardez des films et séries en illimité sur votre TV, smartphone, tablette et ordinateur, sans payer de supplément.</p>
             </div>
-            <div class="col-md-6">
-                <img src="../../assets/images/tv.png" alt="">
+            <div class="col order-first position-relative">
+                <img src="../../assets/images/device-pile.png" alt="devices">
+                <div class="video video-device">
+                    <video autoplay loop src="../../assets/images/video-devices.m4v"></video>
+                </div>
             </div>
         </div>
     </div>
     <div class="custom-br"></div>
 </section>
+<!-- section devices end -->
+
+
+
+<!-- section child start -->
+<section>
+    <div class="container-sm">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col text-center">
+                <h2>Créez des profils pour les enfants.</h2>
+                <p>Les enfants découvrent de nouvelles aventures et retrouvent leurs personnages préférés dans un espace bien à eux, déjà inclus dans votre abonnement.</p>
+            </div>
+            <div class="col position-relative">
+                <img src="../../assets/images/young.png" alt="télévision">
+            </div>
+        </div>
+    </div>
+    <div class="custom-br"></div>
+</section>
+<!-- section child end -->
+
+
+
+<!-- section devices start -->
+<section>
+    <div class="container-sm">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col text-center">
+                <h2>Téléchargez vos séries préférées pour les regarder hors connexion.</h2>
+                <p>Uniquement disponible dans les offres sans pub.</p>
+            </div>
+            <div class="col order-first position-relative">
+                <img src="../../assets/images/mobile-0819.jpg" alt="devices">
+                <!-- <div class="video video-device">
+                    <video autoplay loop src="../../assets/images/video-devices.m4v"></video>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="custom-br"></div>
+</section>
+<!-- section devices end -->
+
+
+
+<!-- section FAQ start -->
+<section>
+    <div class="container-sm">
+        <h2 class="text-center">Foire aux questions</h2>
+        <div ngbAccordion>
+            <div ngbAccordionItem>
+                <h2 ngbAccordionHeader>
+                    <button ngbAccordionButton>Netflix, qu'est-ce que c'est ?</button>
+                </h2>
+            </div>
+            <div ngbAccordionCollapse>
+                <div ngbAccordionBody>
+                    <ng-template>
+                        Netflix est un service de streaming qui propose une vaste sélection de séries, 
+                        films, animes, documentaires et autres programmes sur des milliers d'appareils connectés à Internet. 
+                        Regardez tout ce que vous voulez, quand vous voulez, à un prix mensuel très attractif. 
+                        Découvrez de nouveaux films et séries chaque semaine, il y en a pour tous les goûts !
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p>Prêt à regarder netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+                <div class="row g-3 d-flex justify-content-center">
+                    <div class="input col-10 col-md-6 me-4"><input class="w-100" type="text" placeholder="Adresse e-mail"></div>
+                    <button class="col-5 col-md-3 col-lg-2 btn btn-primary fw-bold fs-4">Commencer <i class="fas fa-chevron-right"></i></button>
+                </div>
+        </div>
+    </div>
+    <div class="custom-br"></div>
+</section>
+<!-- section FAQ end -->
