@@ -7,14 +7,16 @@
 }
 
 $primary: #e50914 ;
+$secondary: #0071eb;
 $light: #ffff;
+$dark: #000000;
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
 body {
     color: #ffff;
-    background-color: #000000;
+    background-color: $dark;
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
