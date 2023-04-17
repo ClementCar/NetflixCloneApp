@@ -98,3 +98,26 @@ section{
     }
 }
 // download end //////////
+
+// section FAQ start //////////
+.accordion{
+    background-color: red;
+    height: 150px;
+}
+// section FAQ end //////////
+
+
+
+// Footer start /////////
+footer{
+    color: rgba(255, 255, 255, 0.7);
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    & a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+// Footer start /////////

@@ -139,20 +139,16 @@
         <h2 class="text-center">Foire aux questions</h2>
 
         <!-- Accordion start -->
-        <div class="accordion accordion-flush" id="accordion" *ngFor="let line of questions">
-            <div class="accordion-item">
-                <h3 class="accordion-header" id="question">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false" aria-controls="content">
-                        {{line.question}}
-                    </button>
-                </h3>
-                <div id="content" class="accordion-collapse collapse" aria-labelledby="#question" data-bs-parent="#accordion">
-                    <div class="accordion-body">
-                        {{line.response}}
-                    </div>
-                </div>
-            </div>
-        </div>
+        <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" type="dark">
+            <ngb-panel *ngFor="let line of questions" cardClass="accordion">
+                <ng-template ngbPanelTitle>
+                    <h3>{{line.question}}</h3>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                    {{line.response}}
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
         <!-- Accordion end -->
 
 
@@ -166,37 +162,43 @@
     </div>
     <div class="custom-br"></div>
 </section>
-
-<div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-      </div>
-    </div>
-  </div>
 <!-- section FAQ end -->
+
+
+<!-- section footer start -->
+<footer class="footer">
+    <div class="container">
+        <p>Des questions ? Appelez le <a href="">(+33)0805-543-063</a></p>
+        <div>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Centre d'aide</a></li>
+                <li><a href="">Compte</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Relations investisseurs</a></li>
+                <li><a href="">Recrutement</a></li>
+                <li><a href="">Boutique Netflix</a></li>
+                <li><a href="">Utiliser des cartes cadeaux</a></li>
+                <li><a href="">Acheter des cartes cadeaux</a></li>
+                <li><a href="">Modes de lecture</a></li>
+                <li><a href="">Conditions d'utilisation</a></li>
+                <li><a href="">Confidentialité</a></li>
+                <li><a href="">Préférences de cookies</a></li>
+                <li><a href="">Mentions Légales</a></li>
+                <li><a href="">Nous contacter</a></li>
+                <li><a href="">Test de vitesse</a></li>
+                <li><a href="">Garantie légale</a></li>
+                <li><a href="">Informations légales</a></li>
+                <li><a href="">Seulement sur Netflix</a></li>
+            </ul>
+        </div>
+        <div class="nav-item me-4" ngbDropdown>
+            <a class="btn btn-outline-light" tabindex="0" ngbDropdownToggle id="navbarDropDown" role="button"><i class="fas fa-globe-europe me-1"></i>Français</a>
+            <div ngbDropdownMenu aria-labelledby="navbarDropDown" class="dropdown-menu">
+                <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Français</a>
+                <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Anglais</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- section footer end -->
