@@ -139,9 +139,9 @@
         <h2 class="text-center">Foire aux questions</h2>
 
         <!-- Accordion start -->
-        <ngb-accordion #acc="ngbAccordion" [closeOthers]="true" type="dark">
-            <ngb-panel *ngFor="let line of questions" cardClass="accordion">
-                <ng-template ngbPanelTitle>
+        <ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+            <ngb-panel *ngFor="let line of questions">
+                <ng-template cardClass="accordion" ngbPanelTitle type="primary">
                     <h3>{{line.question}}</h3>
                 </ng-template>
                 <ng-template ngbPanelContent>
