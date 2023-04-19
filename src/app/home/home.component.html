@@ -1,41 +1,41 @@
 
 <!-- Section Home start -->
 <section class="home d-flex justify-content-center align-items-center">
+    <div class="home__bg"></div>
+        <!-- nav Start -->
+        <nav class="home__nav navbar navbar-expand position-absolute top-0 w-100">
+            <div class="container-sm">
+                <svg class="navbar-brand" xmlns="http://www.w3.org/2000/svg" width="256" height="70" viewBox="0 0 256 69.186"><path d="M35.2 64.726c-3.85.676-7.77.88-11.823 1.42L11.013 29.93V67.7c-3.85.405-7.364.946-11.013 1.486V0h10.27l14.053 39.255V0H35.2v64.726zm21.283-39.39l14.46-.203v10.8l-14.46.203v16.08l19.12-1.15v10.404l-29.93 2.365V0h29.93v10.8h-19.12v14.526zm59.32-14.526H104.59v49.727l-10.8.135V10.81H82.564V0h33.24v10.81zm17.567 13.783h14.797v10.8H133.37V59.93h-10.608V0h30.202v10.8H133.37v13.783zm37.16 25.877c6.15.135 12.364.608 18.377.946V62.09l-29.187-1.42V0h10.8v50.47zm27.5 12.364c3.446.203 7.094.406 10.607.81V0H198.03v62.835zM256 0l-13.716 32.904L256 69.186c-4.054-.54-8.108-1.284-12.162-1.96l-7.77-19.998-7.904 18.378c-3.92-.676-7.703-.88-11.62-1.42l13.918-31.688L217.894 0h11.62l7.094 18.175L244.176 0H256z" fill="#d81f26"/></svg>
+                <!-- <p class="nav-brand text-primary">Netflix</p> -->
+                <div id="navbarNav" class="justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-4" ngbDropdown>
+                            <a class="btn btn-outline-light" tabindex="0" ngbDropdownToggle id="navbarDropDown" role="button"><i class="fas fa-globe-europe me-1"></i>Français</a>
+                            <div ngbDropdownMenu aria-labelledby="navbarDropDown" class="dropdown-menu">
+                                <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Français</a>
+                                <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Anglais</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-primary">S'identifier</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
 
-    <!-- nav Start -->
-    <nav class="navbar navbar-expand position-absolute top-0 w-100">
-        <div class="container-sm">
-            <!-- <img src="http://www.w3.org/2000/svg" alt=""> -->
-            <p class="navabr-brand text-primary">Netflix</p>
-            <div id="navbarNav" class="justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item me-4" ngbDropdown>
-                        <a class="btn btn-outline-light" tabindex="0" ngbDropdownToggle id="navbarDropDown" role="button"><i class="fas fa-globe-europe me-1"></i>Français</a>
-                        <div ngbDropdownMenu aria-labelledby="navbarDropDown" class="dropdown-menu">
-                            <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Français</a>
-                            <a ngbDropdownItem href="#"><i class="fas fa-globe-europe me-1"></i>Anglais</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary">S'identifier</button>
-                    </li>
-                </ul>
+        <div class="home__index container-sm h-100">
+            <div class="text-center">
+                <h1>Films, Séries et bien plus en illimité.</h1>
+                <p>Où que vous soyez. Annulez à tout moment.</p>
+                <p>Prêt à regarder netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
+                <div class="row g-3 d-flex justify-content-center">
+                    <div class="input col-10 col-md-6 me-4"><input class="w-100" type="text" placeholder="Adresse e-mail"></div>
+                    <button class="col-5 col-md-4 col-lg-3 btn btn-primary fw-bold fs-4">Commencer <i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- nav end -->
-
-    <div class="container-sm h-100">
-        <div class="text-center">
-            <h1>Films, Séries et bien plus en illimité.</h1>
-            <p>Où que vous soyez. Annulez à tout moment.</p>
-            <p>Prêt à regarder netflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</p>
-            <div class="row g-3 d-flex justify-content-center">
-                <div class="input col-10 col-md-6 me-4"><input class="w-100" type="text" placeholder="Adresse e-mail"></div>
-                <button class="col-5 col-md-3 col-lg-2 btn btn-primary fw-bold fs-4">Commencer <i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </div>
 </section>
 <!-- section home end -->
 
@@ -174,7 +174,7 @@
                 <li><a href="">FAQ</a></li>
                 <li><a href="">Centre d'aide</a></li>
                 <li><a href="">Compte</a></li>
-                <li><a href="">Press</a></li>
+                <li><a href="">Presse</a></li>
                 <li><a href="">Relations investisseurs</a></li>
                 <li><a href="">Recrutement</a></li>
                 <li><a href="">Boutique Netflix</a></li>
