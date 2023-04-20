@@ -13,6 +13,16 @@
             }
         }
     }
+    & a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.input{
+    padding: 0;
+    border-radius: 0.375rem;
+    background-color: #333;
+    margin-bottom: 16px;
 }
 
 .login{
@@ -20,4 +30,24 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 0 5%;
+    & button {
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 24px 0 12px;
+        padding: 13px;
+    }
+}
+
+.check{
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    & input {
+        color: #333;
+    }
+}
+
+footer {
+    color:rgba(255, 255, 255, 0.7);
 }
