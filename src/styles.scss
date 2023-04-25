@@ -55,6 +55,16 @@ img{
         padding: 16px 20px 0;
         &::placeholder{
             color: #8c8c8c;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .1s ease;
+        }
+    }
+    & input:focus {
+        &::placeholder{
+            transform: translateY(-20px);
+            font-size: 10px;
         }
     }
 }
