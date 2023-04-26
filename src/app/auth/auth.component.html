@@ -18,7 +18,7 @@
                 <div class="input">
                     <input class="w-100" type="text"
                      name="id" id="id"
-                     pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$"
+                     pattern="(./@[a-zA-Z0-9]){3,60}"
                      [(ngModel)]="id"
                      placeholder="E-mail ou numéro de téléphone"
                      #login="ngModel"
@@ -38,7 +38,7 @@
                     required>
                 </div>
                 <div class="inputError text-warning"
-                [hidden]="pass.valid">
+                [hidden]="pass.valid || pass.pristine">
                     Votre mot de passe doit contenir entre 4 et 60 caractères.
                 </div>
             </form>
